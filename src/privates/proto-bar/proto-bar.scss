@@ -1,0 +1,10 @@
+:host {
+  display: block;
+  color: #d8d8d8;
+}
+
+div {
+  height: var(--proto-bar-height);
+  border-radius: var(--proto-bar-radius);
+  background-color: currentColor;
+}

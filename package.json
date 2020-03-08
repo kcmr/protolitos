@@ -1,34 +1,38 @@
 {
   "name": "protolitos",
   "version": "1.0.0",
-  "description": "",
+  "description": "Small and really dumb WebComponents just for fun or quick prototyping. Not for production.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel demo/index.html"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@babel/core": "^7.8.7",
-    "@babel/plugin-transform-react-jsx": "^7.8.3",
-    "lit-html": "^1.1.2",
-    "preact": "^10.3.3",
-    "preact-render-to-string": "^5.1.4"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "prestart": "rimraf .cache build",
+    "start": "parcel demo/index.html --out-dir build",
+    "prebuild": "rimraf dist",
+    "build": "babel src --out-dir dist"
   },
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@researchgate/babel-plugin-transform-scss-import-to-string": "^1.0.0",
-    "es-dev-server": "^1.42.1",
-    "install": "^0.13.0",
     "node-sass": "^4.13.1",
-    "npm": "^6.14.2",
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "rimraf": "^3.0.2"
   },
-  "alias": {
-    "react": "preact/compat",
-    "react-dom/test-utils": "preact/test-utils",
-    "react-dom": "preact/compat"
-  }
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kcmr/protolitos.git"
+  },
+  "keywords": [
+    "WebComponents"
+  ],
+  "author": "Kus Cámara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kcmr/protolitos/issues"
+  },
+  "homepage": "https://github.com/kcmr/protolitos#readme"
 }
