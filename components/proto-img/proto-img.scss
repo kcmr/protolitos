@@ -1,0 +1,10 @@
+:host {
+  display: inline-block;
+  color: #ccc;
+}
+
+img {
+  display: block;
+  background-color: var(--proto-img-bg-color);
+  border-radius: var(--proto-img-border-radius);
+}

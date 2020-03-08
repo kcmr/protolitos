@@ -1,0 +1,1 @@
+export { ProtoImg } from './proto-img/proto-img.js';
