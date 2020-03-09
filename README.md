@@ -1,6 +1,6 @@
 # Protolitos
 
-Small and really dumb WebComponents just for fun or quick prototyping. **Not for production**.
+Small vanilla and really dumb WebComponents just for fun or quick prototyping. **Not for production**.
 
 ## Features
 
