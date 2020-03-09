@@ -8,13 +8,18 @@
     "prestart": "rimraf .cache build",
     "start": "parcel demo/index.html --out-dir build",
     "prebuild": "rimraf dist",
-    "build": "babel src --out-dir dist"
+    "build": "babel components --out-dir dist",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.7",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@researchgate/babel-plugin-transform-scss-import-to-string": "^1.0.0",
+    "@storybook/web-components": "^5.3.14",
+    "babel-loader": "^8.0.6",
+    "lit-html": "^1.1.2",
     "node-sass": "^4.13.1",
     "parcel-bundler": "^1.12.4",
     "rimraf": "^3.0.2"
@@ -34,5 +39,6 @@
   "bugs": {
     "url": "https://github.com/kcmr/protolitos/issues"
   },
-  "homepage": "https://github.com/kcmr/protolitos#readme"
+  "homepage": "https://github.com/kcmr/protolitos#readme",
+  "dependencies": {}
 }
