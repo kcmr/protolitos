@@ -10,7 +10,8 @@
     "prebuild": "rimraf dist",
     "build": "babel components --out-dir dist",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "now-build": "build-storybook -c .storybook -o public"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
